@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: propservice
+  namespace: my-prop-report
+  labels:
+    app: propservice
+spec:
+  selector:
+    app: propservice
+  ports:
+    - name: http
+      port: 8081

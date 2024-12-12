@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "gateway",
+      "propservice",
+      "userservice",
+      "reportservice",
+      "commonservice"
+    ],
+    "clusteredDbApps": [],
+    "dbRandomPassword": "8fe8ada31f8eb6718c1c8f3d06caba6b1056cea59649d8ef6532f5a9cae7",
+    "deploymentType": "kubernetes",
+    "directoryPath": "../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "csinpgs",
+    "ingressDomain": "",
+    "istio": false,
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "ZDdlMzFhODUxZDcwZjc3MzAxZjJkOGY5ODgzYmM4NzNlNWNkODA0YmM2M2QyMmNmZjk0MzU3NWYwNDFjZmQzOTgzYjJhOGEzNTNiOTcxYmFhZmRkZjFhYmNkNTI4YjlmNjVmYg==",
+    "kubernetesNamespace": "my-prop-report",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesStorageClassName": "",
+    "kubernetesUseDynamicStorage": false,
+    "monitoring": "no",
+    "serviceDiscoveryType": "consul"
+  }
+}

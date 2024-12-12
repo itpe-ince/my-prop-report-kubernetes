@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: commonservice
+  namespace: my-prop-report
+  labels:
+    app: commonservice
+spec:
+  selector:
+    app: commonservice
+  ports:
+    - name: http
+      port: 8084

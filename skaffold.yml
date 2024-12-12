@@ -1,0 +1,24 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: csinpgs/gateway
+      context: ../gateway
+      jib: {}
+    - image: csinpgs/propservice
+      context: ../propservice
+      jib: {}
+    - image: csinpgs/userservice
+      context: ../userservice
+      jib: {}
+    - image: csinpgs/reportservice
+      context: ../reportservice
+      jib: {}
+    - image: csinpgs/commonservice
+      context: ../commonservice
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}

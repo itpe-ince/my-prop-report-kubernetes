@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: userservice
+  namespace: my-prop-report
+  labels:
+    app: userservice
+spec:
+  selector:
+    app: userservice
+  ports:
+    - name: http
+      port: 8082
